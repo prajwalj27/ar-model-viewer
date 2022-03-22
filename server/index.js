@@ -16,15 +16,8 @@ app.get("/:user/:project/:format", (req, res) => {
   const format = req.params["format"];
 
   const filePath = `${user}/${project}/scene.${format}`;
-  console.log(filePath);
+  // console.log(filePath);
 
-  // const filePath = path.join(
-  //   __dirname,
-  //   `/assets/${user}/${project}/${project}.html`
-  // );
-
-  // const filePath2 = path.join(__dirname, `/views/index.html`);
-  // res.sendFile(filePath2);
   res.render("index", { filePath: filePath });
 });
 

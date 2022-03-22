@@ -1,0 +1,271 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.2.75",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "wm"
+        }
+    ],
+    "materials" : [
+        {
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "car",
+            "normalTexture" : {
+                "index" : 0,
+                "texCoord" : 0
+            },
+            "occlusionTexture" : {
+                "index" : 1,
+                "texCoord" : 0
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 2,
+                    "texCoord" : 0
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 1,
+                    "texCoord" : 0
+                }
+            }
+        },
+        {
+            "alphaMode" : "BLEND",
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "mirrors",
+            "normalTexture" : {
+                "index" : 3,
+                "texCoord" : 0
+            },
+            "occlusionTexture" : {
+                "index" : 4,
+                "texCoord" : 0
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 5,
+                    "texCoord" : 0
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 4,
+                    "texCoord" : 0
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "car",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                },
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 1
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "source" : 0
+        },
+        {
+            "source" : 1
+        },
+        {
+            "source" : 2
+        },
+        {
+            "source" : 3
+        },
+        {
+            "source" : 4
+        },
+        {
+            "source" : 5
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "car_normal",
+            "uri" : "car_normal.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "car_occlusionRoughnessMetallic",
+            "uri" : "car_occlusionRoughnessMetallic.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "car_baseColor",
+            "uri" : "car_baseColor.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "mirrors_normal",
+            "uri" : "mirrors_normal.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "mirrors_occlusionRoughnessMetallic",
+            "uri" : "mirrors_occlusionRoughnessMetallic.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "mirrors_baseColor",
+            "uri" : "mirrors_baseColor.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 374484,
+            "max" : [
+                2.5637826919555664,
+                1.395401954650879,
+                1.1302642822265625
+            ],
+            "min" : [
+                -2.5638532638549805,
+                -8.666829387493635e-08,
+                -1.1302642822265625
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 374484,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 374484,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5125,
+            "count" : 1506666,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 22939,
+            "max" : [
+                2.302583694458008,
+                1.3933006525039673,
+                1.1254138946533203
+            ],
+            "min" : [
+                -2.480750560760498,
+                0.5945826172828674,
+                -1.1254138946533203
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 22939,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 22939,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 123600,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 4493808,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 4493808,
+            "byteOffset" : 4493808
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2995872,
+            "byteOffset" : 8987616
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6026664,
+            "byteOffset" : 11983488
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 275268,
+            "byteOffset" : 18010152
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 275268,
+            "byteOffset" : 18285420
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 183512,
+            "byteOffset" : 18560688
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 247200,
+            "byteOffset" : 18744200
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 18991400,
+            "uri" : "t1.bin"
+        }
+    ]
+}
