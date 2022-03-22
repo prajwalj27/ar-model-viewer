@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Car</title>
+
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+
+    <style>
+      model-viewer {
+        margin: 0 auto;
+      }
+      div {
+        height: 70vh;
+        margin: 0 auto;
+        width: 50vw;
+        background-color: gray;
+      }
+
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Car</h1>
+    <div class="card">
+      <model-viewer
+        src="https://raw.githubusercontent.com/prajwalj27/ar-model-viewer/main/server/3d-models/porche/scene.gltf"
+        camera-controls
+        auto-rotate
+        ar
+      ></model-viewer>
+    </div>
+  </body>
+</html>
