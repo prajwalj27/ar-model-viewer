@@ -47,7 +47,7 @@ const Uploader = ({ user, project, format }) => {
       <br />
       <button>
         <a
-          href={`http://localhost:3001/${user}/${project}/${format}`}
+          href={`http://localhost:3001/publishProject/${user}/${project}/${format}`}
           target="_blank"
           style={{ "text-decoration": "none", color: "black" }}
         >

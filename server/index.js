@@ -48,6 +48,11 @@ app.get("/projects/getAll", async (req, res) => {
   res.send(projectsData);
 });
 
+app.get("/projects/getStatus", async (req, res) => {
+  let projectsData = await project.find();
+  res.send(projectsData);
+});
+
 app.post("/projects/create", async (req, res) => {
   console.log(req.body);
   const newProject = await project(req.body);
@@ -61,7 +66,6 @@ app.delete("/projects/deleteProject/:id", async (req, res) => {
   console.log("[Project Deleted]");
   res.send(delete_data);
 });
-
 
 
 
@@ -79,12 +83,6 @@ app.delete("/models/deleteModel/:id", async (req, res) => {
 
 
 
-// Delete data endpoint
-// app.delete("/delete/:id", async (req, res) => {
-//   let delete_data = await product.deleteOne({ _id: req.params.id  });
-//   console.log("[Data Deleted]");
-//   res.send(delete_data);
-// });
 
 
 
