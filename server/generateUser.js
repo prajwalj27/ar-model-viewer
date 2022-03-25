@@ -23,7 +23,7 @@ const htmlCode = `
         margin: 2.25% auto;
         height: 530px;
         width: 1000px;
-        background-color: rgb(243, 243, 243);
+        background-color: #70bcd1;
       }
       div {
         height: 70vh;
