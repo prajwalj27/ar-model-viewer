@@ -1,7 +1,8 @@
+require('dotenv').config();
 const mongoose = require("mongoose");
 
-const connString =
-  "mongodb+srv://prajwal:prajwal@cluster0.fcvlr.mongodb.net/FabricateAR?retryWrites=true&w=majority";
+const connString =process.env.ATLAS_URI;
+console.log(connString)
 mongoose
   .connect(connString, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("Database Connected"))
@@ -87,3 +88,4 @@ const modelObject = new mongoose.model("models", modelSchema);
 exports.User = userObject;
 exports.Project = projectObject;
 exports.Model = modelObject;
+
