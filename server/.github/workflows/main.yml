@@ -1,0 +1,32 @@
+# This workflow will do a clean install of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Build React Files & Deploy to EC2 Amazon
+
+on:
+  push:
+    branches: [ dev ]
+  pull_request:
+    branches: [ dev ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js 14.x to Build
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14.x
+        #cache: 'npm'
+    - run: npm install
+    - run: CI=false npm run build
+    - name: ssh deploy on aws ec2
+      uses: easingthemes/ssh-deploy@v2.1.4
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
+        REMOTE_HOST: ${{ secrets.DEPLOY_HOST }}
+        REMOTE_USER: ${{ secrets.DEPLOY_USER }}
+        REMOTE_PORT: ${{ secrets.DEPLOY_PORT }}
+        SOURCE: "build/"
+        TARGET: ${{ secrets.DEPLOY_TARGET }}

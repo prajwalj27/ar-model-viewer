@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Car</title>
+    <title><%= user %> - <%= project %></title>
 
     <script
       type="module"
@@ -16,7 +17,7 @@
         border-radius: 5px;
         border: none;
         margin: 2.25% auto;
-        height: 600px;
+        height: 530px;
         width: 1000px;
         background-color: rgb(243, 243, 243);
       }
@@ -24,17 +25,19 @@
         height: 70vh;
         margin: 0 auto;
         width: 50vw;
-        background-color: #e9e9e9;
+        background-color: #70bcd1;
       }
 
-      p {
+      p, h1 {
         text-align: center;
       }
     </style>
   </head>
   <body>
+    <h1><%= user %> - <%= project %></h1>
     <p>
-      https://raw.githubusercontent.com/prajwalj27/ar-model-viewer/main/server/3d-models/<%= filePath %>
+      https://raw.githubusercontent.com/prajwalj27/ar-model-viewer/main/server/3d-models/<%=
+      filePath %>
     </p>
     <model-viewer
       src="https://raw.githubusercontent.com/prajwalj27/ar-model-viewer/main/server/3d-models/<%= filePath %>"
@@ -42,11 +45,6 @@
       auto-rotate
       ar
     ></model-viewer>
-    <model-viewer
-      src="https://raw.githubusercontent.com/prajwalj27/ar-model-viewer/main/server/3d-models/prajwal/lamborghini/scene.gltf"
-      camera-controls
-      auto-rotate
-      ar
-    ></model-viewer>
   </body>
 </html>
+
