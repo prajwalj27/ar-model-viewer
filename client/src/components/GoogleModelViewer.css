@@ -1,0 +1,9 @@
+model-viewer {
+  border: none;
+  border-radius: 5px;
+  width: 1000px;
+  /* width: 70vw; */
+  height: 100%;
+  background-color: #70bcd1;
+  --poster-color: #ffffff00;
+}
