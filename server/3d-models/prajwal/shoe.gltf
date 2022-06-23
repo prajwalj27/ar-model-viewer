@@ -1,0 +1,266 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [0.59391498565673828, 0.31482300162315369, 0.25840398669242859],
+      "min": [0.012435019016265869, 8.0019235610961914e-6, 0],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 786384,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [0.99988067150115967, 0.99999076128005981, 0.99994105100631714],
+      "min": [-0.9999229907989502, -0.99995344877243042, -0.99999964237213135],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [0.9996148943901062, 0.99991858005523682, 0.9999995231628418, 1],
+      "min": [
+        -0.99975484609603882, -0.99989742040634155, -0.99997878074645996, 1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [0.99094301462173462, 0.99576699733734131],
+      "min": [0.0039003400597721338, 0.00792711041867733],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 355449,
+      "max": [65531],
+      "min": [0],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1572768,
+      "componentType": 5126,
+      "count": 26290,
+      "max": [0.54733401536941528, 0.29860502481460571, 0.25840398669242859],
+      "min": [0, 0, 0.0017590001225471497],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1888248,
+      "componentType": 5126,
+      "count": 26290,
+      "max": [0.99998486042022705, 0.99874687194824219, 0.99994105100631714],
+      "min": [-0.99991083145141602, -0.99995934963226318, -0.99997937679290771],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 1048512,
+      "componentType": 5126,
+      "count": 26290,
+      "max": [0.99999284744262695, 0.99994379281997681, 0.99995243549346924, 1],
+      "min": [
+        -0.99978524446487427, -0.99989742040634155, -0.99983882904052734, 1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 524256,
+      "componentType": 5126,
+      "count": 26290,
+      "max": [0.99216502904891968, 0.99222201108932495],
+      "min": [0.007107169833034277, 0.0095360400155186653],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1421796,
+      "componentType": 5125,
+      "count": 124254,
+      "max": [26289],
+      "min": [0],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "3Digify (https://sketchfab.com/3digify)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/models/17f21b0a2515455f96ad194ad5be9142",
+      "title": "Scanned Adidas Sports Shoe"
+    },
+    "generator": "Sketchfab-3.19.3",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1918812,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 734576,
+      "byteOffset": 1918812,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 2203728,
+      "byteOffset": 2653388,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1469152,
+      "byteOffset": 4857116,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 6326268,
+      "uri": "shoe.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/Textured_baseColor.jpg"
+    },
+    {
+      "uri": "textures/Textured_normal.jpeg"
+    },
+    {
+      "uri": "textures/Textured_metallicRoughness.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": false,
+      "name": "Textured",
+      "normalTexture": {
+        "index": 1,
+        "scale": 1,
+        "texCoord": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [1, 1, 1, 1],
+        "baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "metallicFactor": 1,
+        "metallicRoughnessTexture": {
+          "index": 2,
+          "texCoord": 0
+        },
+        "roughnessFactor": 0.55000000000000004
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 6,
+            "POSITION": 5,
+            "TANGENT": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [1],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [-0.70710678118654746, -0, -0, 0.70710678118654757]
+    },
+    {
+      "children": [2],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [3, 4],
+      "matrix": [
+        1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.33494201302528381,
+        -0.16906900703907013, -0.10584499686956406, 1
+      ],
+      "name": "Mesh.obj.cleaner.gles"
+    },
+    {
+      "mesh": 0,
+      "name": ""
+    },
+    {
+      "mesh": 1,
+      "name": ""
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [0]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ]
+}
